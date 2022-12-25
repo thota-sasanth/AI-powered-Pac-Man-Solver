@@ -44,11 +44,7 @@ def breadthFirstSearch(problem):
             return None           
         currNode = fringeList.pop()            # currNode same as in DFS
         
-        if currNode[0] not in expandedList:
-            for node in problem.getSuccessors(currNode[0]):
-                tmp = list(currNode[1])
-            expandedList.append(currNode[0])
-
+        
     return actions
 
 def nullHeuristic(state, problem=None):
